@@ -15,8 +15,8 @@ body{
   --cor0: #fff;
   --cor1: #ededed;
   --cor2: #dedede;
-  --cor3: #ccc;
-  --cor4: #d9d9d9;
+  --cor3: #d9d9d9;
+  --cor4: #ccc;
   --cor5: #b3b3b3;
   --cor6: #9c9c9c;
   --cor7: #707070;
@@ -37,7 +37,13 @@ a{
   text-decoration: none;
 }
 
-.visible{
+nav.visible{
   top: 0;
   translate: 0;
+}
+
+.container{
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 auto;
 }

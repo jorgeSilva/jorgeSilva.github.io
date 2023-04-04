@@ -1,0 +1,18 @@
+.burger svg{
+  background-repeat: no-repeat;
+  color: var(--cor5);
+}
+
+.burger{
+  cursor: pointer;
+}
+
+.close_button svg{
+  width: 2rem;
+  height: 2rem;
+}
+
+.open_button svg{
+  width: 2rem;
+  height: 2rem;
+}
