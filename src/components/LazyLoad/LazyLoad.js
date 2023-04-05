@@ -105,7 +105,12 @@ const LazyLoad = () => {
           <div className={style.img}>
             <div className={style.response_img}>
               <div className={style.img_fullscren}>
-                <div className={style.img_jorge}></div>
+                <m.div className={style.img_jorge}
+                   initial={{y: '25%', opacity: 0}} 
+                   animate={{y: '0%', opacity: 1}}
+                   transition={{duration: .65, delay: 0.1}}
+                   exit={{opacity: 1}}
+                ></m.div>
               </div>
             </div>
           </div>
