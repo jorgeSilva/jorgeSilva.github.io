@@ -6,6 +6,7 @@ import { ReactComponent as Facebook } from '../../assets/svg/facebook.svg'
 import { ReactComponent as Twitter } from '../../assets/svg/twitter.svg'
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
+import {motion as m} from  'framer-motion';
 
 const LazyLoad = () => {
   const body = React.useRef()
@@ -22,35 +23,58 @@ const LazyLoad = () => {
 
   return (
     <>
-      <article ref={body} className={style.background_lazyload}>
-       <Navbar/>
-
+      <m.article ref={body} className={style.background_lazyload} 
+         initial={{y: '100%'}} 
+         animate={{y: '0%'}}
+         transition={{duration: .3, ease:'easeOut' }}
+         exit={{opacity: 1}}
+      >
         <section className={`${style.content}`}>
           <div className={style.presentation}>
             <div className={style.container_presentation}>
               {author.name && author.name && 
                 <div className={style.name}>
-                  <div className={style.first_name}>
+                  <m.div className={style.first_name}
+                    initial={{y: '100%'}} 
+                    animate={{y: '0%'}}
+                    transition={{duration: .3, delay: 0.2 }}
+                    exit={{opacity: 1}}
+                  >
                     {formatted_name}
-                  </div>
-                  <div className={style.second_name}>
+                  </m.div>
+                  <m.div className={style.second_name}
+                     initial={{y: '100%'}} 
+                     animate={{y: '0%'}}
+                     transition={{duration: .35, delay: 0.2}}
+                     exit={{opacity: 1}}
+                  >
                    {author.surname}
-                  </div>
+                  </m.div>
                 </div> 
               }
 
               {author.secondJob && 
                 <div className={style.secondJob}>
-                  <div className={style.element_secondJob}>
+                  <m.div className={style.element_secondJob}
+                    initial={{y: '30%', opacity: 0}} 
+                    animate={{y: '0%', opacity:1}}
+                    transition={{duration: .4, delay: 0.2}}
+                    exit={{opacity: 1}}
+                  >
                     {author.secondJob}
-                  </div>
+                  </m.div>
                 </div>}
                 
               {author.job && 
                 <div className={style.job}>
-                  <div className={style.element_job}>
+                  <m.div className={style.element_job} 
+                    initial={{y: '100%'}} 
+                    animate={{y: '0%'}}
+                    transition={{duration: .55, delay: 0.2}}
+                    exit={{opacity: 1}}
+                  >
                     {author.job}
-                  </div>
+                  </m.div>
                 </div>
               }
                 
@@ -89,19 +113,31 @@ const LazyLoad = () => {
           
           <section className={style.button_absolute}>
             <Link to={'/Home'}>
-              <div className={style.button}>
+              <m.div className={style.button}
+                initial={{y: '200%'}} 
+                animate={{y: '0%'}}
+                transition={{duration: .3, delay: .5}}
+                exit={{opacity: 1}}
+              >
                 <p>Ver mais</p>
-              </div>
+              </m.div>
             </Link>
           </section>
 
           <div className={style.welcome_position}>
             <div className={style.welcome}>
-              Bem Vindo 
+              <m.p 
+                 initial={{y: '100%', opacity: 0}} 
+                 animate={{y: '0%' , opacity: 1}}
+                 transition={{duration: .3, delay: 0.1 }}
+                 exit={{opacity: 1}}
+              >
+                Bem Vindo 
+              </m.p>
             </div>
           </div>
         </section>
-      </article>
+      </m.article>
     </>
   )
 }

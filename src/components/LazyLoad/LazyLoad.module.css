@@ -1,3 +1,11 @@
+.background_lazyload{
+  height: 101vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* -----------CONTENT--------------- */
 
 .content{
@@ -53,6 +61,8 @@
   line-height: 1.1;
   position: relative;
   transition: .2s ease;
+  background-color: transparent;
+  z-index: 1;
 }
 
 .secondJob::before{
@@ -66,6 +76,8 @@
   flex-wrap: wrap;
   word-break: break-all;
   transition: .2s ease;
+  z-index: 2;
+
 }
 
 .element_secondJob{
@@ -107,6 +119,17 @@ ul{
   gap: 12px;
   width: 1.5rem;
   height: 1.5rem;
+  color: var(--cor6);
+}
+
+ul li svg{
+  fill: var(--cor6);
+}
+
+.information p:hover,
+.information ul li svg{
+  color: var(--cor11);
+  transition:  .3s ease;
 }
 
 @media (max-width: 1460px) {
@@ -379,7 +402,7 @@ ul{
   top: 60%;
 }
 
-.welcome::after{
+.welcome p::after{
   content: '';
   height: 4px;
   width: 1000px;
@@ -388,6 +411,11 @@ ul{
   background-color: var(--cor8);
   top: 57%;
   margin-left: 1rem;
+}
+
+.welcome:hover{
+  color: white;
+  transition: .3s ease;
 }
 
 @media (max-width: 552px) {

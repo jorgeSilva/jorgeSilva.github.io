@@ -28,14 +28,14 @@ const Sidebar = ({classe}) => {
           </div>}
       </div>
 
-      <div className={`${style.menu} ${isActive ? 'active' : ''}`}>
+      {/* <div className={`${style.menu} ${isActive ? 'active' : ''}`}>
         <nav>
           <Link style={{animationDelay: '.1s'}} to="#home">home</Link>
           <Link style={{animationDelay: '.2s'}} to="#competencias">competências</Link>
           <Link style={{animationDelay: '.3s'}} to="#experiencia">experiencia</Link> 
           <Link style={{animationDelay: '.4s'}} to="#contato">contato</Link> 
         </nav>
-      </div>
+      </div> */}
     </>
   )
 }

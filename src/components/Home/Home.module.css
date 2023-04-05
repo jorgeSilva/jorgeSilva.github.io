@@ -2,4 +2,8 @@
   background-color: var(--cor9);
   height: 200vh;
   padding-top: 3rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
