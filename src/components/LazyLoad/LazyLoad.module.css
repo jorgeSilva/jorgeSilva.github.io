@@ -40,7 +40,7 @@
   padding-top: 0rem;
   font-size: 3rem;
   font-family: 'Oswald';
-  align-items: end;
+  align-items: flex-end;
   transition: .2s ease;
 }
 
@@ -100,7 +100,7 @@
 .spot_information{
   grid-column: 3 / 6;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   padding-bottom: 40px;
 }
 
@@ -325,6 +325,13 @@ ul li svg{
   position: absolute;
   bottom: 40px;
   left: 45%;
+  z-index:13;
+}
+
+@media (max-height: 900px) {
+  .button_absolute{
+    bottom: 15vh;
+  }
 }
 
 .button{
@@ -338,7 +345,7 @@ ul li svg{
   overflow: hidden;
   transition: color 1s;
   font-family: 'Inter';
-  z-index: 12;
+  z-index: 11;
 }
 
 .button:hover{
@@ -353,7 +360,6 @@ ul li svg{
   left: -50px;
   width: 150%;
   height: 100%;
-  z-index: 11;
   background-color: var(--cor_primaria);
   transform: scaleX(0) skew(35deg);
   transform-origin: left;
@@ -363,7 +369,6 @@ ul li svg{
 
 .button:hover::before{
   transform: scaleX(1) skew(35deg);
-  z-index: 12;
 }
 
 @media (max-width: 840px) {
@@ -377,7 +382,7 @@ ul li svg{
   .button_absolute{
     right: 20px;
     left: auto;
-    bottom: 15vh;
+    bottom: 19vh;
   }
 }
 

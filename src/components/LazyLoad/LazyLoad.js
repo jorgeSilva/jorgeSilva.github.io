@@ -5,7 +5,6 @@ import { ReactComponent as Instagram } from '../../assets/svg/instagram.svg'
 import { ReactComponent as Facebook } from '../../assets/svg/facebook.svg'
 import { ReactComponent as Twitter } from '../../assets/svg/twitter.svg'
 import { Link } from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
 import {motion as m} from  'framer-motion';
 
 const LazyLoad = () => {
