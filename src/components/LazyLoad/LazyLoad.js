@@ -1,12 +1,11 @@
 import React from 'react';
 import style from './LazyLoad.module.css'
-import Sidebar from '../Sidebar/Sidebar';
-import { ReactComponent as Logo } from '../../assets/svg/logo_JF.svg'
 import { ReactComponent as Linkedin } from '../../assets/svg/linkedin.svg'
 import { ReactComponent as Instagram } from '../../assets/svg/instagram.svg'
 import { ReactComponent as Facebook } from '../../assets/svg/facebook.svg'
 import { ReactComponent as Twitter } from '../../assets/svg/twitter.svg'
 import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 
 const LazyLoad = () => {
   const body = React.useRef()
@@ -24,15 +23,7 @@ const LazyLoad = () => {
   return (
     <>
       <article ref={body} className={style.background_lazyload}>
-        <section className={`${style.header}`}>
-          <div className={style.first_item}>
-            <Logo/>
-          </div>
-
-          <div className={style.second_item}>
-            <Sidebar classe={body}/>
-          </div>
-        </section>
+       <Navbar/>
 
         <section className={`${style.content}`}>
           <div className={style.presentation}>
