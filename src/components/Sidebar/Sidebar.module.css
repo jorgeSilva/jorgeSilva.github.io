@@ -1,18 +1,31 @@
 .burger svg{
   background-repeat: no-repeat;
-  color: var(--cor5);
+  color: var(--cor2);
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  z-index: 2;
+}
+
+.button_close{
+  z-index: 3;
+  position: absolute;
+  color: var(--cor11);
 }
 
 .burger{
   cursor: pointer;
 }
 
-.close_button svg{
-  width: 2rem;
-  height: 2rem;
+.menu_position{
+  position: relative;
 }
 
-.open_button svg{
-  width: 2rem;
-  height: 2rem;
+.menu{
+  position: fixed;
+  display: flex;
+  background-color: var(--cor2);
+  right: 0;
+  top: 0;
+  z-index: 2;
 }

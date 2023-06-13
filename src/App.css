@@ -29,6 +29,10 @@ body{
   --cor_primaria: #7678ed;
 }
 
+.locked{
+  overflow: hidden;
+}
+
 ul, li{
   list-style: none;
 }

@@ -312,10 +312,77 @@ ul li svg{
 }
 
 .img_jorge{
-  background: url('../../assets/background/fotoJorge.png') no-repeat center center;
-  width: 75%;
+  background-image: url("../../assets/background/fotoJorge.png");
+  align-self: center;
+  width: 100%;
   height: 75%;
+  margin: auto auto;
+  padding-right: 50px;
+  justify-self: center;
+}
+
+@media (max-width:981px) {
+  .img{
+  grid-column: 6 / -1;
+  grid-row: 1/-1;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.response_img{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 100%;
+}
+.img_fullscren{
+  height: 100%;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
+}
+
+.img_jorge{
+  background: url("../../assets/background/fotoJorge.png") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+  justify-self: center;
+}
+}
+
+@media (max-width:450px) {
+  .img{
+  grid-column: 6 / -1;
+  grid-row: 1/-1;
+  height: 100%;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.response_img{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 100%;
+}
+.img_fullscren{
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-left: 60px;
+}
+
+.img_jorge{
+  background: url("../../assets/background/fotoJorge.png") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+  justify-self: center;
+}
 }
 
 
