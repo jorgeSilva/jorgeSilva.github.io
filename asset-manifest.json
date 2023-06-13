@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/jorgeSilva.github.io/static/css/main.9b4da776.css",
+    "main.js": "/jorgeSilva.github.io/static/js/main.7430f6ca.js",
+    "static/media/fotoJorge.png": "/jorgeSilva.github.io/static/media/fotoJorge.c3b2ca1517840aac3a8e.png",
+    "static/media/instagram.svg": "/jorgeSilva.github.io/static/media/instagram.eaf4716ba7677850edd5b44182223362.svg",
+    "static/media/twitter.svg": "/jorgeSilva.github.io/static/media/twitter.9be5106a6e3ee46c9f3d421291bd12e5.svg",
+    "static/media/linkedin.svg": "/jorgeSilva.github.io/static/media/linkedin.54cb669a7d6aec9e3c3aa08bc3758342.svg",
+    "static/media/logo_JF.svg": "/jorgeSilva.github.io/static/media/logo_JF.2ec4417035303507c3a862b75985929e.svg",
+    "index.html": "/jorgeSilva.github.io/index.html",
+    "static/media/facebook.svg": "/jorgeSilva.github.io/static/media/facebook.ba9ce6a15d6110d18f36d37c6ca39377.svg",
+    "static/media/list.svg": "/jorgeSilva.github.io/static/media/list.f98b98b4905b36b844a65327ecaadc32.svg",
+    "static/media/x-lg.svg": "/jorgeSilva.github.io/static/media/x-lg.f520e54c746f7505bec401e45a68a2de.svg",
+    "main.9b4da776.css.map": "/jorgeSilva.github.io/static/css/main.9b4da776.css.map",
+    "main.7430f6ca.js.map": "/jorgeSilva.github.io/static/js/main.7430f6ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b4da776.css",
+    "static/js/main.7430f6ca.js"
+  ]
+}
